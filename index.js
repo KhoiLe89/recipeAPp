@@ -14,5 +14,11 @@ app.get("/", (req, res) => {
   var recipe = Recipe.find({}).then((recipe) => {
     res.send(recipe)
   })
+})
+
+app.get("/:name",(req, res) => {
+  Recipe.findOne({name: req.params.name}).then((recipe) => {
+    res.render("show", {recipe} )
+  })
 
 })
