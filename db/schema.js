@@ -13,6 +13,4 @@ var Ingredient = mongoose.model("Ingredient", IngredientSchema)
 
 var Recipe = mongoose.model("Recipe", RecipeSchema)
 
-module.exports = {
-  Ingredient, Recipe
-}
+module.exports = mongoose.model("Recipe", RecipeSchema)

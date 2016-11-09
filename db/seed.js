@@ -20,7 +20,7 @@ var sauce = Ingredient.create({name: "Tomato Sauce"})
 var chicken = Ingredient.create({name: "Chicken"})
 var flour = Ingredient.create({name: "Flour"})
 
-Recipe.create({name: "Lasagna", ingredients: [noodle, sauce]})
+var lasagna = Recipe.create({name: "Lasagna", ingredients: [noodle, sauce]})
 Recipe.create({name: "Fried Chicken", ingredients: [chicken, flour]})
 
 process.exit()
